@@ -1,6 +1,6 @@
 import React from "react";
 import { Switch, Route, BrowserRouter as Router } from "react-router-dom";
-import LandingPage from "./Lading/index";
+import Home from "./Home";
 
 function App() {
   return (
@@ -8,7 +8,7 @@ function App() {
       <header >
         <Router>
           <Switch>
-            <Route exact path="/" component={LandingPage}>
+            <Route exact path="/" component={Home}>
             </Route>            
           </Switch>
         </Router>

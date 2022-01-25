@@ -2,8 +2,9 @@ import { createGlobalStyle } from "styled-components";
 
 export default createGlobalStyle`
  html {
-    --black: #272727;
-    --pink: #ffd700;
+    --white: #fff;
+    --lightBlue: #f6f8fc;
+    --red : #fd5451;
     --font: 'Dela Gothic One', cursive;
     --font2: 'Lato', sans-serif;
     --lightGray: #c4c4c4;
@@ -46,6 +47,11 @@ export default createGlobalStyle`
     display: flex;
     align-items: center;
     justify-content: center;
+  }
+  .flex_cs {
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
   }
    .flex_ce {
     display: flex;
