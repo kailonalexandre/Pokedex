@@ -5,6 +5,8 @@ export default createGlobalStyle`
     --white: #fff;
     --lightBlue: #f6f8fc;
     --red : #fd5451;
+    --gray : #c4c4c9;
+    --green: #A8F083;
     --font: 'Dela Gothic One', cursive;
     --font2: 'Lato', sans-serif;
     --lightGray: #c4c4c4;
