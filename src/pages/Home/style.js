@@ -2,8 +2,8 @@ import styled from "styled-components";
 
 export const Container = styled.div`
   background-color: var(--lightBlue);
-  height: 100vh;
   width: 100vw;
+  min-height: 100vh;
 `;
 
 export const Wrapper = styled.div`
@@ -28,7 +28,7 @@ export const Title = styled.div`
   }
 `;
 
-export const Search = styled.div`
+export const Search = styled.form`
   background-color: var(--white);
 
   height: 60px;
