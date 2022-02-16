@@ -62,6 +62,8 @@ const PokemonList = (props) => {
         return "#a38c21";
       case "Fantasma":
         return "#7b62a3";
+      case "Dragão":
+        return "#51c4e7";
     }
   };
 
