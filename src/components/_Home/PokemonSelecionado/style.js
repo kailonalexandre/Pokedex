@@ -1,52 +1,38 @@
 import styled from "styled-components";
 
 export const Container = styled.div`
-  position: relative;
-  min-height: 100px;
-  margin-top: 50px;
-  width: 100%;
-  height: 100%;
+  width: 40%;
+  margin-left: 20px;
 `;
 
-export const List = styled.div`
-  width: 100%;
-  flex-wrap: wrap;
-`;
-
-export const Pokemon = styled.div`
+export const Wrapper = styled.div`
   background-color: var(--white);
-  margin: 15px;
+  position: relative;
   text-align: center;
   border-radius: 20px;
   box-shadow: 1px 1px 25px rgb(0 0 0 / 7%);
-  position: relative;
-  padding: 60px 20px 30px 20px;
-  width: 30%;
-  margin-top: 40px;
-  cursor: pointer;
-  -webkit-transition: 0.3s ease;
+  padding: 60px 40px 30px 40px;
+  width: 100%;
+  height: 700px;
+  margin-top: 100px;
   -webkit-transition: 0.3s ease;
   transition: 0.3s ease;
 
-  :hover {
-    box-shadow: 1px 15px 25px rgba(0, 0, 0, 0.15);
-    transform: scale(1.035);
-  }
-
   img {
     position: absolute;
-    top: -50px;
-    width: 100px;
+    top: -100px;
+    width: 250px;
     left: 50%;
     transform: translate(-50%, 0);
   }
 
-  h1 {
-    font-size: 25px;
+  p {
+    margin-top: 70px;
+    color: var(--gray);
   }
 
-  p {
-    color: var(--gray);
+  h1 {
+    font-size: 25px;
   }
 `;
 
@@ -60,4 +46,21 @@ export const Tipo = styled.span`
   border-radius: 5px;
   padding: 2px 15px;
   font-size: 14px;
+`;
+
+export const Medidas = styled.div`
+  margin-top: 20px;
+  display: flex;
+
+  .titulo {
+    text-transform: uppercase;
+  }
+
+  .medida {
+    background-color: var(--lightBlue);
+    border-radius: 20px;
+    width: 150px;
+    padding: 5px;
+    margin: 5px 10px 5px;
+  }
 `;
