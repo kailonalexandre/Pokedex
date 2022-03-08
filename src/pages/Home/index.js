@@ -1,13 +1,22 @@
 import PokemonList from "components/_Home/PokemonList";
 import PokemonSelecionado from "components/_Home/PokemonSelecionado";
 import pokeball from "img/pokeball.png";
-import React, { useState } from "react";
+import React, { useState, useEffect } from "react";
 import { Button, Container, Search, Title, Wrapper, Box } from "./style";
 
 const Home = () => {
   const [termoDeBusca, setTermoDeBusca] = useState("");
   const [clicou, setClicou] = useState(false);
   const [pokemonSelecionado, setPokemonSelecionado] = useState({});
+  const [pokemons, setPokemons] = useState([]);
+  const [pokemonsSalvos, setPokemonsSalvos] = useState({
+    anterior: {},
+    proximo: {},
+  });
+
+  useEffect(() => {
+    console.log(pokemonsSalvos);
+  }, [pokemonsSalvos]);
 
   const handleInput = (input) => {
     setTermoDeBusca(input.target.value);
@@ -41,11 +50,19 @@ const Home = () => {
               clicou={clicou}
               setClicou={setClicou}
               setPokemonSelecionado={setPokemonSelecionado}
+              pokemonsSalvos={pokemonsSalvos}
+              setPokemonsSalvos={setPokemonsSalvos}
+              pokemons={pokemons}
+              setPokemons={setPokemons}
             />
           </div>
           <PokemonSelecionado
             pokemonSelecionado={pokemonSelecionado}
             setPokemonSelecionado={setPokemonSelecionado}
+            pokemonsSalvos={pokemonsSalvos}
+            setPokemonsSalvos={setPokemonsSalvos}
+            pokemons={pokemons}
+            setPokemons={setPokemons}
           />
         </Box>
       </Wrapper>

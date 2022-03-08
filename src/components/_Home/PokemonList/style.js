@@ -21,7 +21,7 @@ export const Pokemon = styled.div`
   box-shadow: 1px 1px 25px rgb(0 0 0 / 7%);
   position: relative;
   padding: 60px 20px 30px 20px;
-  width: 30%;
+  width: 29%;
   margin-top: 40px;
   cursor: pointer;
   -webkit-transition: 0.3s ease;
